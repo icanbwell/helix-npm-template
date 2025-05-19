@@ -1,5 +1,5 @@
 {
-  "name": "@imranq2/fhir-to-csv",
+  "name": "@imranq2/{{cookiecutter.package_name}}",
   "version": "x.x.x",
   "description": "A template for creating npm packages using TypeScript and VSCode",
   "main": "./lib/index.js",
@@ -10,7 +10,7 @@
     "build": "tsc --project tsconfig.build.json",
     "clean": "rm -rf ./lib/",
     "cm": "cz",
-    "lint": "eslint ./src/ --ext .ts --fix",
+    "lint": "eslint src --ext .ts --fix",
     "prepare": "husky",
     "semantic-release": "semantic-release",
     "test:watch": "jest --watch",
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/icanbwell/fhir-to-csv.git"
+    "url": "git+https://github.com/icanbwell/{{cookiecutter.directory_name}}.git"
   },
   "license": "Apache-2.0",
   "author": {
     "name": "Imran Qureshi",
     "email": "imranq2@users.noreply.github.com",
-    "url": "https://github.com/icanbwell/fhir-to-csv"
+    "url": "https://github.com/icanbwell/{{cookiecutter.directory_name}}"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -42,12 +42,10 @@
     "codecov"
   ],
   "bugs": {
-    "url": "https://github.com/icanbwell/fhir-to-csv/issues"
+    "url": "https://github.com/icanbwell/{{cookiecutter.directory_name}}/issues"
   },
-  "homepage": "https://github.com/icanbwell/fhir-to-csv#readme",
+  "homepage": "https://github.com/icanbwell/{{cookiecutter.directory_name}}#readme",
   "dependencies": {
-    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
-    "fflate": "^0.8.2"
   },
   "devDependencies": {
     "commitizen": "^4.3.1",

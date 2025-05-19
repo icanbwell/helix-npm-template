@@ -14,7 +14,7 @@ COPY --chown=node:node package.json .
 RUN yarn install
 
 # Copy the rest of the application files to the working directory
-COPY --chown=node:node . .
+COPY --chown=node:node .. .
 
 # Expose port
 EXPOSE 5051
