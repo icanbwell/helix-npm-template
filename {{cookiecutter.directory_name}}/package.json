@@ -29,7 +29,7 @@
     "url": "https://github.com/icanbwell/{{cookiecutter.directory_name}}"
   },
   "engines": {
-    "node": ">=24.2.0"
+    "node": ">=18"
   },
   "keywords": [
     "boilerplate",
